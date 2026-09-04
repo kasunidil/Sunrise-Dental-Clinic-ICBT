@@ -1,0 +1,155 @@
+/* Patient directory: kept separate from the shared application and dashboard themes. */
+.patient-page {
+    -fx-background-color: #F4F7FB;
+}
+
+.patient-hero {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 16px;
+    -fx-border-color: #DFE7F2;
+    -fx-border-radius: 16px;
+    -fx-padding: 22px 24px;
+    -fx-effect: dropshadow(gaussian, rgba(26, 47, 80, .04), 12, .1, 0, 3);
+}
+
+.patient-eyebrow {
+    -fx-text-fill: #1976D2;
+    -fx-font-size: 10px;
+    -fx-font-weight: 800;
+    -fx-letter-spacing: 1.4px;
+}
+
+.patient-title {
+    -fx-text-fill: #14264A;
+    -fx-font-size: 27px;
+    -fx-font-weight: 800;
+}
+
+.patient-subtitle {
+    -fx-text-fill: #7588A4;
+    -fx-font-size: 13px;
+}
+
+.patient-search-row {
+    -fx-background-color: #EAF2FC;
+    -fx-background-radius: 14px;
+    -fx-padding: 13px;
+}
+
+.patient-search-row .text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D7E3F1;
+}
+
+.patient-records-panel {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 16px;
+    -fx-border-color: #DFE7F2;
+    -fx-border-radius: 16px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(26, 47, 80, .045), 14, .1, 0, 3);
+}
+
+.patient-panel-title {
+    -fx-text-fill: #14264A;
+    -fx-font-size: 17px;
+    -fx-font-weight: 800;
+}
+
+.patient-panel-subtitle {
+    -fx-text-fill: #8292A9;
+    -fx-font-size: 12px;
+}
+
+.patient-table {
+    -fx-background-color: transparent;
+    -fx-border-color: #E5ECF5;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-padding: 2px;
+}
+
+.patient-table .column-header-background {
+    -fx-background-color: #F4F8FD;
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+.patient-table .column-header, .patient-table .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #E5ECF5 transparent;
+}
+
+.patient-table .column-header .label {
+    -fx-text-fill: #59708F;
+    -fx-font-size: 12px;
+    -fx-font-weight: 800;
+}
+
+.patient-table .table-row-cell {
+    -fx-cell-size: 47px;
+    -fx-border-color: transparent transparent #EFF3F8 transparent;
+}
+
+.patient-table .table-row-cell:filled:hover {
+    -fx-background-color: #F5FAFF;
+}
+
+.patient-table .table-row-cell:filled:selected {
+    -fx-background-color: #E4F1FF;
+}
+
+.patient-table .table-row-cell:filled:selected .text {
+    -fx-fill: #13254A;
+}
+
+/* Modal profile editor */
+.patient-editor-dialog .dialog-pane {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 6px;
+}
+
+.patient-editor-dialog .header-panel {
+    -fx-background-color: #FFFFFF;
+}
+
+.patient-editor-dialog .header-panel .label {
+    -fx-text-fill: #14264A;
+    -fx-font-weight: 800;
+}
+
+.patient-editor-dialog .button-bar {
+    -fx-background-color: #F7F9FC;
+    -fx-padding: 10px 14px;
+}
+
+.patient-editor-content {
+    -fx-padding: 6px 4px 2px;
+}
+
+.patient-modal-title {
+    -fx-text-fill: #14264A;
+    -fx-font-size: 20px;
+    -fx-font-weight: 800;
+}
+
+.patient-modal-mode {
+    -fx-background-color: #E4F1FF;
+    -fx-text-fill: #1672C7;
+    -fx-background-radius: 20px;
+    -fx-font-size: 10px;
+    -fx-font-weight: 800;
+    -fx-padding: 5px 9px;
+}
+
+.patient-editor-grid .text-field, .patient-editor-grid .combo-box, .patient-editor-grid .date-picker, .patient-editor-grid .text-area {
+    -fx-background-color: #FAFCFF;
+    -fx-border-color: #D9E4F1;
+}
+
+.patient-editor-grid .text-field:focused, .patient-editor-grid .combo-box:focused, .patient-editor-grid .date-picker:focused, .patient-editor-grid .text-area:focused {
+    -fx-border-color: #1976D2;
+}
+
+.patient-editor-grid .text-area .content {
+    -fx-background-color: #FAFCFF;
+}

@@ -1,0 +1,614 @@
+/* Sunrise Dental — Royal Purple Theme
+   Full application colour theme
+   Primary palette:
+   Deep Purple  #3B1F5C
+   Purple       #6C3FB4
+   Accent       #9B6FE8
+   Light Purple #EDE5FA
+   Background   #F7F4FC
+   White        #FFFFFF
+*/
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+.root {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-font-size: 14px;
+    -fx-base: #F7F4FC;
+    -fx-background-color: #F7F4FC;
+    -fx-text-fill: #2E2140;
+}
+
+.app-shell {
+    -fx-background-color: #F7F4FC;
+}
+
+/* =========================================================
+   SIDEBAR / NAVIGATION
+   ========================================================= */
+.sidebar {
+    -fx-background-color: #3B1F5C;
+    -fx-padding: 28px 16px 18px;
+    -fx-spacing: 12px;
+}
+
+.brand {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 19px;
+    -fx-font-weight: 800;
+    -fx-letter-spacing: .5px;
+}
+
+.brand-sub {
+    -fx-text-fill: #CDBCE5;
+    -fx-font-size: 10px;
+    -fx-font-weight: 700;
+    -fx-letter-spacing: 1px;
+}
+
+.nav-section-label {
+    -fx-text-fill: #BDA8D8;
+    -fx-font-size: 10px;
+    -fx-font-weight: 800;
+    -fx-padding: 16px 12px 5px;
+    -fx-letter-spacing: 1px;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #EAE1F5;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 12px 14px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-font-weight: 650;
+    -fx-graphic-text-gap: 13px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #513077;
+    -fx-text-fill: #FFFFFF;
+}
+
+.nav-button.active {
+    -fx-background-color: #EDE5FA;
+    -fx-text-fill: #3B1F5C;
+}
+
+.nav-button .ikonli-font-icon,
+.logout-button .ikonli-font-icon {
+    -fx-icon-color: #C3A9E2;
+}
+
+.nav-button.active .ikonli-font-icon {
+    -fx-icon-color: #3B1F5C;
+}
+
+.logout-button {
+    -fx-background-color: #513077;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 12px 14px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-font-weight: 700;
+    -fx-graphic-text-gap: 12px;
+}
+
+.logout-button:hover {
+    -fx-background-color: #65408C;
+}
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+.topbar {
+    -fx-background-color: #F7F4FC;
+    -fx-border-color: transparent transparent #E4DCEF transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 20px 30px 18px;
+}
+
+.page-title {
+    -fx-text-fill: #3B1F5C;
+    -fx-font-size: 27px;
+    -fx-font-weight: 800;
+}
+
+.page-subtitle {
+    -fx-text-fill: #78698A;
+    -fx-font-size: 13px;
+}
+
+.role-pill {
+    -fx-background-color: #E9E0F5;
+    -fx-text-fill: #5A397D;
+    -fx-padding: 8px 12px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+}
+
+/* =========================================================
+   CARDS / CONTENT SURFACES
+   ========================================================= */
+.card,
+.metric-card {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 16px;
+    -fx-border-color: #E3DAEF;
+    -fx-border-radius: 16px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(59, 31, 92, .07), 15, .15, 0, 4);
+}
+
+.metric-card {
+    -fx-border-color: #E0D5EC;
+}
+
+.metric-value {
+    -fx-text-fill: #3B1F5C;
+    -fx-font-size: 29px;
+    -fx-font-weight: 800;
+}
+
+.metric-label {
+    -fx-text-fill: #705B87;
+    -fx-font-size: 12px;
+    -fx-font-weight: 750;
+}
+
+.section-title {
+    -fx-text-fill: #3B1F5C;
+    -fx-font-size: 17px;
+    -fx-font-weight: 800;
+}
+
+.label-muted {
+    -fx-text-fill: #78698A;
+}
+
+.form-label {
+    -fx-text-fill: #51376A;
+    -fx-font-weight: 700;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.button {
+    -fx-cursor: hand;
+}
+
+.primary-button {
+    -fx-background-color: #6C3FB4;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 9px;
+    -fx-padding: 11px 17px;
+    -fx-font-weight: 800;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #572F94;
+}
+
+.secondary-button {
+    -fx-background-color: #3B1F5C;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 9px;
+    -fx-padding: 11px 17px;
+    -fx-font-weight: 800;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #513077;
+}
+
+.outline-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #5B3B7A;
+    -fx-border-color: #C6B5DB;
+    -fx-border-radius: 9px;
+    -fx-background-radius: 9px;
+    -fx-padding: 10px 16px;
+    -fx-font-weight: 700;
+    -fx-cursor: hand;
+}
+
+.outline-button:hover {
+    -fx-background-color: #F0E9F9;
+}
+
+.danger-button {
+    -fx-background-color: #C7465C;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 9px;
+    -fx-padding: 11px 17px;
+    -fx-font-weight: 800;
+}
+
+.danger-button:hover {
+    -fx-background-color: #A9364A;
+}
+
+/* =========================================================
+   FORM CONTROLS
+   ========================================================= */
+.text-field,
+.password-field,
+.combo-box,
+.date-picker,
+.text-area {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D2C6E1;
+    -fx-border-radius: 9px;
+    -fx-background-radius: 9px;
+    -fx-padding: 10px 11px;
+    -fx-text-fill: #2E2140;
+}
+
+.text-field:focused,
+.password-field:focused,
+.combo-box:focused,
+.date-picker:focused,
+.text-area:focused {
+    -fx-border-color: #6C3FB4;
+    -fx-border-width: 1.5px;
+}
+
+.text-field .content,
+.password-field .content,
+.text-area .content {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 9px;
+}
+
+/* =========================================================
+   TABLES / DATA VIEWS
+   ========================================================= */
+.table-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E3DAEF;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 3px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #F0EAF7;
+    -fx-background-radius: 10px 10px 0 0;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #DED4E9 transparent;
+}
+
+.table-view .column-header {
+    -fx-size: 42px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #5B4771;
+    -fx-font-weight: 800;
+}
+
+.table-row-cell {
+    -fx-cell-size: 44px;
+    -fx-border-color: transparent transparent #F0EBF5 transparent;
+}
+
+.table-row-cell:filled:hover {
+    -fx-background-color: #F7F2FC;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #EDE5FA;
+}
+
+.table-row-cell:filled:selected .text {
+    -fx-fill: #3B1F5C;
+}
+
+.status-pill,
+.form-mode {
+    -fx-background-color: #E8F4EC;
+    -fx-text-fill: #34704C;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 20px;
+    -fx-font-weight: 800;
+}
+
+.error-text,
+.status-inactive {
+    -fx-text-fill: #C7465C;
+    -fx-font-weight: 700;
+}
+
+.status-active {
+    -fx-text-fill: #4A8A62;
+    -fx-font-weight: 800;
+}
+
+.selection-summary {
+    -fx-background-color: #F1ECF7;
+    -fx-border-color: #DDD2E8;
+    -fx-border-radius: 9px;
+    -fx-background-radius: 9px;
+    -fx-padding: 10px 12px;
+    -fx-text-fill: #5B4771;
+}
+
+/* =========================================================
+   DASHBOARD
+   ========================================================= */
+.overview-hero {
+    -fx-background-color: linear-gradient(to right, #3B1F5C, #6C3FB4);
+    -fx-background-radius: 20px;
+    -fx-padding: 26px 30px;
+    -fx-effect: dropshadow(gaussian, rgba(59, 31, 92, .18), 22, .16, 0, 8);
+}
+
+.dashboard-eyebrow {
+    -fx-text-fill: #C9A9F2;
+    -fx-font-size: 10px;
+    -fx-font-weight: 800;
+    -fx-letter-spacing: 1.4px;
+}
+
+.dashboard-hero-title {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 29px;
+    -fx-font-weight: 800;
+}
+
+.dashboard-hero-copy {
+    -fx-text-fill: #E0D3F0;
+    -fx-font-size: 14px;
+}
+
+.dashboard-date {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 15px;
+    -fx-font-weight: 750;
+}
+
+.dashboard-date-caption {
+    -fx-text-fill: #C9A9F2;
+    -fx-font-size: 10px;
+    -fx-font-weight: 800;
+    -fx-letter-spacing: .8px;
+}
+
+.dashboard-metric {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E0D5EC;
+    -fx-background-radius: 14px;
+    -fx-border-radius: 14px;
+    -fx-padding: 18px;
+}
+
+.dashboard-metric .ikonli-font-icon {
+    -fx-icon-color: #6C3FB4;
+}
+
+.dashboard-metric .metric-value {
+    -fx-text-fill: #3B1F5C;
+}
+
+.dashboard-metric .metric-label {
+    -fx-text-fill: #705B87;
+}
+
+.analytics-card,
+.schedule-card {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E0D5EC;
+    -fx-background-radius: 14px;
+    -fx-border-radius: 14px;
+}
+
+.analytics-card .section-title,
+.schedule-card .section-title {
+    -fx-text-fill: #3B1F5C;
+}
+
+/* =========================================================
+   CHARTS
+   ========================================================= */
+.chart,
+.chart-plot-background {
+    -fx-background-color: #FFFFFF;
+}
+
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: #E9E2F2;
+}
+
+.chart-title {
+    -fx-text-fill: #5A397D;
+    -fx-font-weight: 800;
+}
+
+.axis-label {
+    -fx-text-fill: #78698A;
+}
+
+/* =========================================================
+   DIALOGS / DETAILS
+   ========================================================= */
+.dashboard-table {
+    -fx-pref-height: 300px;
+}
+
+.patient-avatar {
+    -fx-background-color: #EDE5FA;
+    -fx-background-radius: 50px;
+    -fx-min-width: 64px;
+    -fx-min-height: 64px;
+    -fx-max-width: 64px;
+    -fx-max-height: 64px;
+    -fx-alignment: center;
+}
+
+.patient-avatar .ikonli-font-icon {
+    -fx-icon-color: #6C3FB4;
+}
+
+.dialog-title {
+    -fx-text-fill: #3B1F5C;
+    -fx-font-size: 20px;
+    -fx-font-weight: 800;
+}
+
+.dialog-code {
+    -fx-text-fill: #6C3FB4;
+    -fx-font-weight: 800;
+}
+
+.detail-value {
+    -fx-text-fill: #51376A;
+}
+
+.details-area {
+    -fx-control-inner-background: #F4EFF9;
+}
+
+.invoice-result {
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 13px;
+}
+
+.scroll-pane,
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.separator .line {
+    -fx-border-color: #E1D8EB;
+}
+
+.treatment-dialog .dialog-pane {
+    -fx-background-color: #F7F4FC;
+}
+
+.treatment-dialog .header-panel {
+    -fx-background-color: #FFFFFF;
+}
+
+.treatment-dialog .header-panel .label {
+    -fx-text-fill: #3B1F5C;
+    -fx-font-size: 18px;
+    -fx-font-weight: 800;
+}
+
+/* =========================================================
+   LOGIN EXPERIENCE
+   ========================================================= */
+.login-bg {
+    -fx-background-color: #F7F4FC;
+}
+
+.login-hero {
+
+    -fx-padding: 58px;
+}
+
+.login-eyebrow {
+    -fx-text-fill: #C9A9F2;
+    -fx-font-size: 11px;
+    -fx-font-weight: 800;
+    -fx-letter-spacing: 1.2px;
+}
+
+.login-hero-title {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 40px;
+    -fx-font-weight: 800;
+}
+
+.login-hero-copy {
+    -fx-text-fill: #E0D3F0;
+    -fx-font-size: 15px;
+}
+
+.login-quote {
+    -fx-text-fill: #D7BDF4;
+    -fx-font-size: 15px;
+    -fx-font-style: italic;
+}
+
+.login-card {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 18px;
+    -fx-padding: 38px;
+    -fx-effect: dropshadow(gaussian, rgba(59, 31, 92, .12), 25, .18, 0, 7);
+}
+
+.login-title {
+    -fx-text-fill: #3B1F5C;
+    -fx-font-size: 29px;
+    -fx-font-weight: 800;
+}
+
+.login-accent {
+    -fx-text-fill: #6C3FB4;
+    -fx-font-weight: 800;
+    -fx-letter-spacing: 1px;
+}
+
+/* =========================================================
+   COMMON STATES
+   ========================================================= */
+.check-box {
+    -fx-text-fill: #51376A;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #6C3FB4;
+    -fx-border-color: #6C3FB4;
+}
+
+.progress-bar .track {
+    -fx-background-color: #E9E0F5;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #6C3FB4;
+}
+
+.hyperlink {
+    -fx-text-fill: #6C3FB4;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #572F94;
+}
+
+.tooltip {
+    -fx-background-color: #3B1F5C;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #C5B4D9;
+    -fx-background-radius: 8px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #9E87B9;
+}
